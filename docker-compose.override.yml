@@ -1,0 +1,16 @@
+services:
+  scheduler:
+    volumes:
+      - ./data:/usr/local/airflow/data
+
+  dag-processor:
+    volumes:
+      - ./data:/usr/local/airflow/data
+
+  api-server:
+    volumes:
+      - ./data:/usr/local/airflow/data
+
+  triggerer:
+    volumes:
+      - ./data:/usr/local/airflow/data
